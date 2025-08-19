@@ -4,16 +4,13 @@ import { CheckCircle, XCircle, Loader } from 'lucide-react';
 const BrevoListManager = () => {
   // List data with names and IDs
   const lists = [
-    { name: 'CSR', id: 90 },
-    { name: 'NGO', id: 91 },
     { name: 'Hardware', id: 92 },
     { name: 'Partner', id: 93 },
     { name: 'SIs', id: 94 },
     { name: 'Bidder', id: 95 },
     { name: 'Central & State Govt', id: 96 },
     { name: 'WCD', id: 97 },
-    { name: 'North East', id: 98 },
-    { name: 'Rajya & Lok Sabha', id: 99 }
+    { name: 'North East', id: 98 }
   ];
 
   // Form data state - separate for each list
@@ -129,7 +126,7 @@ const BrevoListManager = () => {
     <div className="min-h-screen bg-gray-50 py-4 sm:py-8 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
-          Brevo List Subscription Manager
+          Diksha's Email Subscription Page
         </h1>
 
         {/* Toast Notification - Mobile optimized */}
