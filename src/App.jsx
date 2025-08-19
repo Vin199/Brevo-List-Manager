@@ -87,7 +87,7 @@ const BrevoListManager = () => {
     setLoadingStates(prev => ({ ...prev, [listId]: true }));
 
     try {
-      // Correct Brevo API endpoint for creating a contact and adding to a list
+      //Brevo API endpoint for creating a contact and adding to a list
       const response = await fetch('https://api.brevo.com/v3/contacts', {
         method: 'POST',
         headers: {
