@@ -4,6 +4,7 @@ import { CheckCircle, XCircle, Loader } from 'lucide-react';
 const BrevoListManager = () => {
   // List data with names and IDs
   const lists = [
+    { name: 'Employees', id: 87 },
     { name: 'Website', id: 89 },
     { name: 'CSR', id: 90 },
     { name: 'NGO', id: 91 },
@@ -65,8 +66,8 @@ const BrevoListManager = () => {
     const data = formData[listId];
     
     // Validation
-    if (!data.firstName.trim() || !data.lastName.trim() || !data.email.trim()) {
-      showToast('Please fill in all fields', 'error');
+    if (!data.email.trim()) {
+      showToast('Email Id is required', 'error');
       return;
     }
 
