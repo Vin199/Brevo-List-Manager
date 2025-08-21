@@ -69,8 +69,8 @@ const BrevoListManager = () => {
     const data = formData[listId];
     
     // Validation
-    if (!data.firstName.trim() || !data.lastName.trim() || !data.email.trim()) {
-      showToast('Please fill in all fields', 'error');
+    if (!data.email.trim()) {
+      showToast('Email Id is required', 'error');
       return;
     }
 
