@@ -35,11 +35,14 @@ const BrevoListManager = () => {
 
   // Handle input changes
   const handleInputChange = (listId, field, value) => {
+    // For firstName field, keep only the first word (everything before first space)
+    const processedValue = field === 'firstName' ? value.split(' ')[0] : value;
+    
     setFormData(prev => ({
       ...prev,
       [listId]: {
         ...prev[listId],
-        [field]: value
+        [field]: processedValue
       }
     }));
   };
